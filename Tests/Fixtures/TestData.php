@@ -28,7 +28,7 @@ class TestData implements FixtureInterface
                 'body' => 'blublublu {{title}} {% block content %}{% endblock %} blublublu',
             ),
             array(
-                'locale' => 'es',
+                'locale' => 'es_ES',
                 'body' => 'bliblibli {{title}} {% block content %}{% endblock %} bliblibli',
             ),
         );
@@ -65,7 +65,7 @@ class TestData implements FixtureInterface
                 'from_name' => 'rabbid',
             ),
             array(
-                'locale' => 'es',
+                'locale' => 'es_ES',
                 'subject' => 'this template won\'t work',
                 'body' => '{{name} <-- fail',
                 'from_address' => 'rabbids@email.fr',

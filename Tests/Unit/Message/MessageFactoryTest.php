@@ -82,7 +82,7 @@ An error occured while trying to send email: rabbids-template
 Unexpected "}"
 EOF;
 
-        $message = $factory->get('rabbids-template', 'chuk@email.fr', array('name' => 'chuck'), 'es');
+        $message = $factory->get('rabbids-template', 'chuk@email.fr', array('name' => 'chuck'), 'es_ES');
         $this->assertInstanceOf('Swift_Message', $message);
         $this->assertEquals(array('admin@email.fr' => null), $message->getTo());
         $this->assertEquals('An exception occured', $message->getSubject());
